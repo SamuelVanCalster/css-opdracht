@@ -15,7 +15,6 @@
 body {
   background-color: $bggrey;
   font-family: Roboto, sans-serif;
-  padding: 20px;
   * {
     line-height: calc(2px + 2ex + 2px);
   }
@@ -84,7 +83,8 @@ body {
   }
   /* alle kleuren voor dit vlak: #FF715B  #30332E  #62BBC1  #EC058E */
   header {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
     nav a:nth-child(-n + 4) {
       display: none;
     }
@@ -92,7 +92,7 @@ body {
       font-size: 15px;
       position: absolute;
       right: 20px;
-      top: 25px;
+      top: 18px;
       text-decoration: none;
       color: black;
     }
@@ -116,6 +116,53 @@ body {
       }
       p {
         font-style: italic;
+      }
+    }
+    .hoofding {
+      padding: 10px;
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      p:nth-child(2) {
+        font-style: italic;
+      }
+    }
+    .overons {
+      section {
+        padding: 10px;
+        margin-bottom: 20px;
+        h3 {
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        p {
+          margin-bottom: 15px;
+        }
+        input {
+          background-color: black;
+          color: white;
+          border: none;
+          padding: 5px;
+          border-radius: 5px;
+        }
+      }
+    }
+    .watwedoen {
+      section {
+        padding: 10px;
+        > div:first-child {
+          height: 200px;
+          width: auto;
+          margin-bottom: 5px;
+        }
+        h3 {
+          font-size: 13px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
       }
     }
   }
