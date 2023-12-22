@@ -13,7 +13,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: $bggrey;
   font-family: Roboto, sans-serif;
   * {
     line-height: calc(2px + 2ex + 2px);
@@ -106,9 +105,11 @@ body {
     .billboard {
       background-image: url(/images/achtergrond-nacht.png);
       background-size: cover;
+      background-position: center bottom;
       color: white;
       padding: 40px 10px;
       margin-bottom: 20px;
+      height: 200px;
       h2 {
         font-size: 18px;
         margin-bottom: 10px;
@@ -185,6 +186,32 @@ body {
     a {
       text-decoration: none;
       color: white;
+    }
+  }
+}
+
+@media (min-width: 899px) {
+  body {
+    header {
+      display: flex;
+      align-items: center;
+      h1 {
+        margin-right: auto;
+      }
+      nav a:nth-child(-n + 4) {
+        all: revert;
+      }
+      .mobiel {
+        display: none;
+      }
+      nav {
+        display: flex;
+        gap: 10px;
+        a:nth-child(-n + 5) {
+          text-decoration: none;
+          color: black;
+        }
+      }
     }
   }
 }
